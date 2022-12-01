@@ -5,10 +5,10 @@
 
 | P  | Q  | P && Q | P \|\| Q |
 |:--:|:--:|:------:|:--------:|
-| T  | T  |        |          |
-| T  | F  |        |          |
-| F  | T  |        |          |
-| F  | F  |        |          |
+| T  | T  |    T   |          |
+| T  | F  |    F   |          |
+| F  | T  |    F   |          |
+| F  | F  |    F   |          |
 
 
 2. Prove a version of DeMorgan's Law:
