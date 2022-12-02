@@ -23,7 +23,7 @@ class Grades {
             else {
                 System.out.print("Error");
             }
-        //for letter grade
+            //for letter grade
             
         int back = grade%10;
             if (0 <= grade && grade <= 19) {
@@ -43,7 +43,7 @@ class Grades {
             else if (grade == 100) {
                 System.out.print("+");
             }
-        }
-        //for + or -
-        
+            //for + or -
     }
+        
+}
