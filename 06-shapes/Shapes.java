@@ -2,6 +2,9 @@ class Shapes {
     public static void main(String[] args) {
         System.out.println("Shapes");
         square(5);
+        rectangle(5, 3);
+        righttriangle(5);
+        triangle(7);
     }
     //end main
     public static void square(int x) {
