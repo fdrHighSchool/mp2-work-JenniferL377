@@ -5,17 +5,17 @@ class FizzBuzz {
             if (i%15 == 0) {
                 System.out.print("\nFizz! Buzz! ");
             }
-	        else if (i%3==0) {
-		        System.out.print("\nFizz! ");
-		        if (i/3==3) {
-		            System.out.print("Fizz! ");
-		        }
+	    else if (i%3==0) {
+	        System.out.print("\nFizz! ");
+		if (i/3==3) {
+		    System.out.print("Fizz! ");
+		}
             }
             else if (i%5==0) {
                 System.out.print("\nBuzz! ");
                 if (i/5==5) {
-		            System.out.print("Buzz! ");
-		        }
+		    System.out.print("Buzz! ");
+		}
             }
             else {
                 System.out.print("\n"+i);
