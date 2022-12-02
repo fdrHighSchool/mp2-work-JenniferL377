@@ -1,10 +1,12 @@
 import java.util.Scanner;
+//imports scanner
 
 class Grades {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the grade: ");
         int grade = s.nextInt();
+        //user inputs grade
             if (0<=grade&&grade<60) {
                 System.out.print("F");
             }
@@ -23,7 +25,7 @@ class Grades {
             else {
                 System.out.print("Error");
             }
-            //for letter grade
+            //for letter grade between 1 and 100, gives error otherwise
             
         int back = grade%10;
             if (0 <= grade && grade <= 19) {
@@ -43,7 +45,8 @@ class Grades {
             else if (grade == 100) {
                 System.out.print("+");
             }
-            //for + or -
+            //for + or -, f has own + and -, 100 is +
     }
-        
+    //end main
 }
+//end class
