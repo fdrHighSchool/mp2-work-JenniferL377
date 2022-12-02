@@ -1,6 +1,6 @@
 class Division {
     public static void main(String[] args) {
-        divBy3("12123");
+        System.out.print(divBy3("12123"));
     }
     public static boolean divBy3(String a) {
         int b = 0;
