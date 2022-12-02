@@ -23,16 +23,27 @@ class Grades {
             else {
                 System.out.print("Error");
             }
-            //for letter grade
+        //for letter grade
             
         int back = grade%10;
-            if((back==0)||(back==1)||(back==2)) {
+            if (0 <= grade && grade <= 19) {
                 System.out.print("-");
             }
-            else if((back==7)||(back==8)||(back==9)||(back==10)) {
+            else if (40 <= grade && grade < 60) {
                 System.out.print("+");
             }
-            //for + or -
+            else if (60 <= grade && grade <= 99) {
+                if((back==0)||(back==1)||(back==2)) {
+                    System.out.print("-");
+                }
+                else if((back==7)||(back==8)||(back==9)) {
+                System.out.print("+");
+                }
+            }
+            else if (grade == 100) {
+                System.out.print("+");
+            }
         }
+        //for + or -
         
     }
