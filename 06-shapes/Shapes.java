@@ -1,13 +1,13 @@
 class Shapes {
     public static void main(String[] args) {
         System.out.println("Shapes");
-        triangle(8);
+        square(5);
     }
     public static void square(int x) {
         for(int row = 1; row <= x; row++) {
             System.out.println("");
             for (int col = 1; col <= x; col++) {
-            System.out.print("* ");
+                System.out.print("* ");
             }
         }
     }
@@ -15,16 +15,17 @@ class Shapes {
         for(int row = 1; row <= x; row++) {
             System.out.println("");
             for (int col = 1; col <= y; col++) {
-            System.out.print("* ");
+                System.out.print("* ");
             }
         }
     }
     public static void righttriangle(int x) {
         for(int row = 1; row <= x; row++) {
-            System.out.println("");
+            String a = "";
             for (int col = 1; col <= row; col++) {
-            System.out.print("* ");
+                a += "* ";
             }
+            System.out.println(a);
         }
     }
     public static void triangle(int x) {
@@ -34,7 +35,7 @@ class Shapes {
                 System.out.print(" ");
             }
             for (int col = 1; col <= row; col++) {
-            System.out.print("* ");
+                System.out.print("* ");
             }
         }
     }
