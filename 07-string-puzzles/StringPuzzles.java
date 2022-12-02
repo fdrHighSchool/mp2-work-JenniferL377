@@ -1,7 +1,11 @@
 class StringPuzzles {
     public static void main(String[] args) {
-        countHi("hihi");
+        conCat("abc", "cat"); //return "abcat"
+        firstHalf("WooHoo"); //return "Woo"
+        repeatEnd("Hello", 3); //return "llollollo"
+        countHi("abc hi ho"); //return 1
     }
+    //end main
     public static void conCat(String sentence1, String sentence2) {
         String s1last = sentence1.substring(sentence1.length()-1);
         String s2first = sentence2.substring(0,1);
@@ -12,6 +16,7 @@ class StringPuzzles {
             System.out.println(sentence1+sentence2); 
         }
     }
+    //end conCat
     public static void firstHalf(String sentence) {
         if((sentence.length())%2==0) {
             int halfof = (sentence.length()/2);
@@ -22,11 +27,13 @@ class StringPuzzles {
             System.out.println("Number is odd");
         }
     }
+    //end firstHalf
     public static void repeatEnd(String sentence, int n) {
         for(int i = 0; i < n; i++) {
             System.out.print(sentence.substring(sentence.length()-n));
         }
     }
+    //end repeatEnd
     public static void countHi(String sentence) {
         int count = 0;
         for(int i = 0; i <= sentence.length() -2; i++) {
@@ -36,7 +43,18 @@ class StringPuzzles {
         }
         System.out.println(count);
     }
-    public static void withoutString(String sentence1, String sentence2) {
+    //end countHi
+    public static void withoutString(String base, String remove) {
         
     }
+    //end withoutString
+    public static void sumDigits(String sentence) {
+        
+    } 
+    //end sumDigits
+    public static void makeSarcastic(String sentence) {
+        
+    }
+    //end makeSarcastic
 }
+//end class
