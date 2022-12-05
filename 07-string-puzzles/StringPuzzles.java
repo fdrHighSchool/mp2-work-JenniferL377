@@ -58,7 +58,24 @@ class StringPuzzles {
     }
     //end countHi
     public static void withoutString(String base, String remove) {
-        
+        for(int i = 0; i<(base.length()-remove.length()); i++) {
+            if(!((base.substring(i, i+remove.length())).equalsIgnoreCase(remove))) {
+                System.out.print(base.substring(i, i+1));
+            }
+            else {
+                i += remove.length()-1;
+            }
+        }
+        //checks the string from beginning until length of String remove away from the end, checks using length of String remove each time
+        //if that part of String base doesn't match String remove, it will print out the character in the first spot
+        //if it does match, it will not print anything and skip to the next portion that won't include the characters that have been removed
+        if ((base.substring(base.length()-remove.length())).equalsIgnoreCase(remove)) {
+            System.out.print("");
+        }
+        else {
+            System.out.print(base.substring(base.length()-remove.length()));
+        }
+        //check the last amount of characters that would otherwise go out of bound in the first if else statement
     }
     //end withoutString
     public static void sumDigits(String sentence) {
@@ -71,3 +88,4 @@ class StringPuzzles {
     //end makeSarcastic
 }
 //end class
+
